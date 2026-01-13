@@ -100,6 +100,7 @@ begin
                      
                 else
                     div <= 0;
+                    
                 end if;
                 
         end if;
@@ -361,7 +362,7 @@ begin
     signals : ila_1
         PORT MAP(clk    => clk,
                  probe0 => addr_shift, 
-                 probe1 => data_shift, 
+                 probe1 => data_shift,
                  probe2 => slva_shift,
                  probe3 => count_sig);
 
