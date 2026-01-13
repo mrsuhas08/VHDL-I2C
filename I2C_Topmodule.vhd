@@ -82,7 +82,7 @@ architecture Behavioral of i2c_top_module is
              probe_out4 : OUT STD_LOGIC_VECTOR(7 DOWNTO 0);
              probe_out5 : OUT STD_LOGIC_VECTOR(0 DOWNTO 0));
     END COMPONENT;
-        
+    
     -- inputs
     signal rst_vio  :   std_logic       := '1';
     signal enable   :   std_logic       := '0';
@@ -90,6 +90,7 @@ architecture Behavioral of i2c_top_module is
     signal slv_addr :   std_logic_vector(6 downto 0)    := (others => '0');
     signal addr     :   std_logic_vector(7 downto 0)    := (others => '0');
     signal data_in  :   std_logic_vector(7 downto 0)    := (others => '0');
+    
     -- outputs
     signal data_out :   std_logic_vector(7 downto 0)    := (others => '0');
     
